@@ -422,7 +422,9 @@ namespace VSCaptureMP
 
             try
             {
-                MPPort.Write(finaltxbuff, 0, finaltxbuff.Length);
+	    	Console.WriteLine("finaltxbuff: ");
+                Console.WriteLine("(X) Hexadecimal:. . . . . . . {0:X}\n", finaltxbuff); 
+		MPPort.Write(finaltxbuff, 0, finaltxbuff.Length);
             }
             catch (Exception ex)
             {
